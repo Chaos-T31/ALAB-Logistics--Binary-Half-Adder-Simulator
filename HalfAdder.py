@@ -32,7 +32,7 @@ bits = [MSB, LSB]                                               # For storing th
 
 
 
-def halfAdder(bits):
+def halfAdder(bits):                                                         # For performing the Half-Binary Addition
     if str(bits[0]) + str(bits[1]) in ('00', '01', '10', '11'):
         return {'Carry': bits[0] & bits[1], 'Sum': bits[0] ^ bits[1]}
     else:
